@@ -54,11 +54,9 @@ body {
   padding: 0 20px;
 }
 
-/* Sticky Top Wrapper (Alert Bar + Header) */
+/* Top Wrapper (Alert Bar + Header) */
 .sticky-top-wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static;
 }
 
 /* Top Security Alert Bar */
