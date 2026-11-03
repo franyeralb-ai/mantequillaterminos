@@ -54,9 +54,16 @@ body {
   padding: 0 20px;
 }
 
+/* Sticky Top Wrapper (Alert Bar + Header) */
+.sticky-top-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* Top Security Alert Bar */
 .top-alert-bar {
-  background: linear-gradient(90deg, rgba(246, 70, 93, 0.18), rgba(252, 213, 53, 0.15), rgba(246, 70, 93, 0.18));
+  background: linear-gradient(90deg, rgba(246, 70, 93, 0.22), rgba(252, 213, 53, 0.18), rgba(246, 70, 93, 0.22)), #14171c;
   border-bottom: 1px solid rgba(246, 70, 93, 0.35);
   padding: 10px 0;
   font-size: 0.86rem;
@@ -95,13 +102,10 @@ body {
 
 /* Header */
 .site-header {
-  background-color: rgba(24, 26, 32, 0.92);
+  background-color: rgba(24, 26, 32, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .header-inner {

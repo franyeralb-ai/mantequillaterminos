@@ -11,54 +11,57 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top Security Alert Bar -->
-  <div class="top-alert-bar">
-    <div class="container top-alert-content">
-      <span class="pulse-dot"></span>
-      <p>
-        <strong>AVISO DE SEGURIDAD:</strong> Prohibido pagos de terceros o a terceros (activa <strong>Retención Preventiva 24–72h</strong>). Si quien abre la orden <strong>no tiene sus datos bancarios en el perfil de Binance, será REPORTADO SIN EXCEPCIONES</strong>.
-      </p>
+  <!-- Contenedor fijo superior (Barra de Alerta + Cabecera) -->
+  <div class="sticky-top-wrapper">
+    <!-- Top Security Alert Bar -->
+    <div class="top-alert-bar">
+      <div class="container top-alert-content">
+        <span class="pulse-dot"></span>
+        <p>
+          <strong>AVISO DE SEGURIDAD:</strong> Prohibido pagos de terceros o a terceros (activa <strong>Retención Preventiva 24–72h</strong>). Si quien abre la orden <strong>no tiene sus datos bancarios en el perfil de Binance, será REPORTADO SIN EXCEPCIONES</strong>.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- Header / Brand Identity -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand-box">
-        <div class="brand-logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" class="shield-icon">
-            <path d="M12 2L3 6.5V12C3 17.5 6.8 22.6 12 24C17.2 22.6 21 17.5 21 12V6.5L12 2Z" fill="url(#goldGrad)" stroke="#FCD535" stroke-width="1.5"/>
-            <path d="M9 12.5L11 14.5L15.5 9.5" stroke="#0B0E11" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="goldGrad" x1="3" y1="2" x2="21" y2="24" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FCD535"/>
-                <stop offset="1" stop-color="#F0B90B"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <div class="brand-title-row">
-            <h1>MANTEQUILLA TEAM</h1>
-            <span class="verified-badge" title="Grupo de Comerciantes P2P Verificados">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Grupo de Comerciantes P2P
-            </span>
+    <!-- Header / Brand Identity -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-box">
+          <div class="brand-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" class="shield-icon">
+              <path d="M12 2L3 6.5V12C3 17.5 6.8 22.6 12 24C17.2 22.6 21 17.5 21 12V6.5L12 2Z" fill="url(#goldGrad)" stroke="#FCD535" stroke-width="1.5"/>
+              <path d="M9 12.5L11 14.5L15.5 9.5" stroke="#0B0E11" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="goldGrad" x1="3" y1="2" x2="21" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FCD535"/>
+                  <stop offset="1" stop-color="#F0B90B"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
-          <p class="brand-subtitle">🇻🇪 Equipo de Comerciantes en Venezuela (VES / Bolívares) • Políticas Anti-Fraude</p>
+          <div class="brand-text">
+            <div class="brand-title-row">
+              <h1>MANTEQUILLA TEAM</h1>
+              <span class="verified-badge" title="Grupo de Comerciantes P2P Verificados">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                Grupo de Comerciantes P2P
+              </span>
+            </div>
+            <p class="brand-subtitle">🇻🇪 Equipo de Comerciantes en Venezuela (VES / Bolívares) • Políticas Anti-Fraude</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#reglamento" class="btn btn-gold">
+            <span>📜 Ver Cláusulas</span>
+          </a>
+          <button type="button" id="openTemplatesBtn" class="btn btn-outline" title="Plantillas listas para copiar en Binance P2P">
+            <span>📋 Plantillas Binance</span>
+          </button>
         </div>
       </div>
-
-      <div class="header-actions">
-        <a href="#reglamento" class="btn btn-gold">
-          <span>📜 Ver Cláusulas</span>
-        </a>
-        <button type="button" id="openTemplatesBtn" class="btn btn-outline" title="Plantillas listas para copiar en Binance P2P">
-          <span>📋 Plantillas Binance</span>
-        </button>
-      </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main class="container main-content">
     <!-- Hero Banner / Core Golden Rules -->
